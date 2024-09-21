@@ -19,7 +19,7 @@ services:
       - "${SEONAUT_PORT:-9000}:9000"
     depends_on:
       - db
-    # command: sh -c /bin/wait && /app/seonaut
+    command: sh -c '/bin/wait && /app/seonaut'
     environment:
       - WAIT_HOSTS=db:3306
       - WAIT_HOSTS_TIMEOUT=300
