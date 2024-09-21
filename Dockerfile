@@ -21,7 +21,7 @@ FROM alpine:latest AS production
 COPY --from=front /home/node/app /app/
 
 ENV WAIT_VERSION 2.9.0
-COPY --from=ghcr.io/ufoscout/docker-compose-wait:$WAIT_VERSION /wait /bin/wait
+COPY --from=ghcr.io/ufoscout/docker-compose-wait:latest /wait /bin/wait
 # ADD https://github.com/ufoscout/docker-compose-wait/releases/download/$WAIT_VERSION/wait /bin/wait
 # RUN chmod +x /bin/wait
 
