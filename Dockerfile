@@ -25,3 +25,5 @@ ADD https://github.com/ufoscout/docker-compose-wait/releases/download/$WAIT_VERS
 RUN chmod +x /bin/wait
 
 WORKDIR /app
+
+CMD ["/bin/wait", "&&", "/app/seonaut"]
