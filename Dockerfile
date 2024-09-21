@@ -27,5 +27,5 @@ COPY --from=ghcr.io/ufoscout/docker-compose-wait:latest /wait /bin/wait
 
 WORKDIR /app
 
-CMD ["sh", "-c", "/bin/wait", "&&", "/app/seonaut"]
+CMD ["sh", "-c", "/bin/wait && /app/seonaut"]
 # CMD ["/app/seonaut"]
