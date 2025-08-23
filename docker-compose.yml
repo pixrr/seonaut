@@ -25,6 +25,8 @@ services:
       - SERVICE_FQDN_APP_9000
     networks:
     - seonaut_network
+    labels:
+      - traefik.http.middlewares.oauth-auth-redirect@file
 
 networks:
   seonaut_network:
