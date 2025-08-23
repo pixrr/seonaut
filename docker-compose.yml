@@ -15,8 +15,6 @@ services:
   app:
     build: .
     container_name: "SEOnaut-app"
-    ports:
-      - "${SEONAUT_PORT:-9000}:9000"
     depends_on:
       - db
     environment:
